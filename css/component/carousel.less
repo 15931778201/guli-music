@@ -1,0 +1,41 @@
+.carousel-wrap{
+    position: relative;
+  overflow: hidden;
+    & > .list{
+        list-style: none;
+        overflow: hidden;
+        position: absolute;
+        & > li{
+            float: left;
+            height: 620/@rem;
+            overflow: hidden;
+            & > a{
+                display: block;
+                & > img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    & > .points-wrap{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        & > span{
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0);
+            border:1px solid #fff;
+            margin-left:5px;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+}
